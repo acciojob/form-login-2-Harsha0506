@@ -1,7 +1,8 @@
-//your JS code here. If required.
-let submit = document.getElementById("button");
+let form = document.getElementById("form");
 
-submit.addEventListener("click", function () {
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
   let firstName = document.getElementById("firstName").value;
   let lastName = document.getElementById("lastName").value;
   let phone = document.getElementById("phone").value;
@@ -14,4 +15,3 @@ submit.addEventListener("click", function () {
     " Email ID: " + email
   );
 });
-
